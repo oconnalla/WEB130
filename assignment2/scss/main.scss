@@ -1,0 +1,52 @@
+@import 'colors';
+@import 'buttons';
+@import 'sizer';
+
+//incoming css
+body{
+    background-color: darken($dark, 30%);
+    color:$white;
+}
+
+h1{
+    color:$grey;
+}
+// p{
+//     color:magenta;
+// }
+// main{
+//     h1{
+//         color: magenta;
+//     }
+// }
+// .blueButton{
+//     @include buttonMaker($blue);
+// }
+// .magentaButton{
+//     @include buttonMaker($magenta);
+// }
+
+.jumbotron{
+    background-image: url('../img/breakingnews.png');
+    background-size:cover;
+    height:70vh;
+    @include sizer(small){
+        display:none;
+    }
+    @include sizer(medium){
+        display:none;
+    }
+}
+article{
+    columns: 3;
+        @include sizer(small){
+            columns: 1;
+        }
+        @include sizer(medium){
+            columns: 2;
+        }
+        @include sizer(large){
+            columns: 3;
+        }
+
+} 

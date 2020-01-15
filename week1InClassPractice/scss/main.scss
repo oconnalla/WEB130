@@ -1,0 +1,39 @@
+@import 'colors';
+@import 'buttons';
+@import 'sizing';
+
+//incoming css
+body{
+    background-color: $dark;
+}
+
+h1{
+    color:$white;
+}
+p{
+    color:magenta;
+}
+main{
+    h1{
+        color: magenta;
+    }
+}
+.blueButton{
+    @include buttonMaker($blue);
+}
+.magentaButton{
+    @include buttonMaker($magenta);
+}
+
+
+.exampleelement{
+    @include sizer(small){
+
+    }
+    @include sizer(medium){
+
+    }
+    @include sizer(large){
+
+    }
+} 

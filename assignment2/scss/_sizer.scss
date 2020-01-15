@@ -1,0 +1,20 @@
+$sm-max: 600.99px;
+$md-min: 601px;
+$md-max: 990.99px;
+$lg-min: 991px;
+
+@mixin sizer($size){
+    @if($size == small){
+        @media screen and (max-width: $sm-max){
+            @content  
+        }
+    } @else if($size == medium){
+        @media screen and (min-width: $md-min) and (max-width: $md-max){
+            @content  
+        }
+    }@else if($size == large){
+        @media screen and (min-width: $lg-min){
+            @content  
+        }
+    }
+};

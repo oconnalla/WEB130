@@ -1,0 +1,15 @@
+@import 'colors';
+
+// mixins
+@mixin buttonMaker($color){
+    color:$white;
+    background-color:$color;
+    padding:.5em;
+    font-size:1.25rem;
+    border-radius:4px;
+    border: 1px solid darken($color, 10%);
+    &:hover{
+        background-color: darken($color, 15%);
+        cursor: pointer;
+    }
+}

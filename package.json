@@ -1,0 +1,18 @@
+{
+  "name": "web130",
+  "version": "1.0.0",
+  "description": "a folder for web 130 projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ariel OConnall",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0",
+    "sass": "^1.24.4"
+  }
+
+}
