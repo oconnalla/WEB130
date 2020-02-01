@@ -1,0 +1,48 @@
+// ======================================
+//  Variables
+// ======================================
+
+// Colors
+$white: #fff;
+
+$color-primary: #278da4; // teal
+$color-primary-light: lighten($color-primary, 10%);
+$color-secondary: #b13c69; // dark violet red
+$color-accent: #eeea72;
+$color-shade: #eee;
+
+$color-text: #343434;
+$color-bg: #3acec2;
+$color-bg-light: #009fe1;
+
+// Fonts
+$font-stack-primary: 'Raleway', sans-serif;
+$font-stack-secondary: 'Bree Serif', serif;
+
+// Layout
+$max-width: 1000px;
+$gutter: 10px;
+
+//breakpoints
+// $break-xs: 575px;
+// $break-s: 576px;
+// $break-m: 768px;
+// $break-l: 992px;
+
+// map of breakpoints
+$breakpoints: (
+  'xs': 575px, 
+  'sm': 576px,
+ 'med': 768px,
+  'lg': 992px,  
+);
+
+//Theme colors map
+$themes: (
+  'ent': #79ccf6,
+ 'arch': #fd6fa5,
+  'edu': #23bbae,
+  'sim': #2377bb,
+  'soc': #ada3f1,
+'games': #3cb141,
+);

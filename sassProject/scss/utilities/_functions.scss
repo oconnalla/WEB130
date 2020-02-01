@@ -1,0 +1,17 @@
+// ======================================
+//  Functions
+// ======================================
+@function px-pc($target, $context:$max-width ){
+    @return ($target / $context) * 100%;
+}
+
+
+//$items = # of items to display per a line
+//$g-pct: px-pc(($gutter)*2); turns gutter val into a percetage val, do so by dividing gutter by max-width, multiplied by 2 to get combined val of left and right gutters
+//$g-total: $items * $g-pct; gets total gutter value of each row/flex-line, do this by multiplying gutter percentage value by total items per line
+//@return(100% / $items) - $g-total; divides total width by number of items per a line
+@function per-line($items){
+    $g-pct: px-pc(($gutter)*2);
+    $g-total: $items * $g-pct;
+    @return(100% / $items) - $g-total;
+}

@@ -1,0 +1,15 @@
+// ======================================
+//  Image Styles
+// ======================================
+
+.img-featured {
+  width: 165px;
+  border: 4px solid $white; 
+  border-radius: 50%;
+  margin-top: 75px;
+  position: relative;
+  z-index: 100;
+  @include mediaQ('xs') {
+    display: none;
+  }
+}

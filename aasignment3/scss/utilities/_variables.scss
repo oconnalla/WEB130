@@ -1,0 +1,31 @@
+// ======================================
+//  Variables
+// ======================================
+
+// Colors
+$white: #fff;
+$color-primary: #2DA9FF; // Bright Blue
+$color-secondary: #0A75BE; //Dark Blue
+
+//hover options
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-dark: darken($color-primary, 10%);
+
+// Fonts
+$font-stack-primary:'Inconsolata', monospace;
+
+// Layout
+$max-width: 1000px;
+$gutter: 10px;
+
+// Breakpoints
+$break-xs: 575px;
+$break-s: 576px;
+$break-m: 768px;
+$break-l: 992px;
+
+
+
+
+
+

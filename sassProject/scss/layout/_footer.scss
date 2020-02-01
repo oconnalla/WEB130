@@ -1,0 +1,14 @@
+// ======================================
+//  Footer Styles
+// ======================================
+
+footer {
+  padding: 2em 0 0;
+  height: 100px;
+  background-color: $color-shade;
+  margin-top: 3.5em;
+  @include skewed {
+    background-color: $color-shade;
+    top: -25px;
+  }
+}

@@ -1,0 +1,35 @@
+// ======================================
+//  Header Styles
+// ======================================
+
+header {
+  @include skewed {
+    background-color: $white;
+    bottom: -25px;
+  }
+  height: 460px;
+  background: linear-gradient($color-bg-light, $color-bg), 
+              url('../img/bg.jpg') no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  h1 {
+    color: $white;
+    font-size: 4.8em;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    @include mediaQ('xs') {
+      font-size: 3.4em;
+    }
+  }
+  p {
+    color: $color-accent;
+    font-size: 1.25em;
+    margin: 0;
+  }
+  @include mediaQ('xs') {
+    height: 340px;
+  }
+  @include mediaQ('lg') {
+    background-position: 0 0, 0 45%;
+  }
+}

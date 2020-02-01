@@ -1,0 +1,22 @@
+// ======================================
+//  Partial Imports
+// ======================================
+
+// Utilities
+@import 'utilities/variables',
+        'utilities/mixins',
+        'utilities/functions',
+        'utilities/helpers';
+        
+// Base Styles     
+@import 'base/reset',
+        'base/base';
+
+// Layout Styles
+//not currently made
+@import 'layout/containers';
+
+
+// Component Styles
+@import 'components/nav',
+        'components/buttons';

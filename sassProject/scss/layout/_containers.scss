@@ -1,0 +1,34 @@
+// ======================================
+//  Layout Container Styles
+// ======================================
+
+// Main content
+.main-content {
+  @include flexIt($wrap: wrap);
+  flex-wrap: wrap;
+  @include mediaQ('med') {
+    @include center(90%);
+  }
+}  
+
+
+// Inner
+.inner {
+  padding: 0.5em 1em;
+}
+
+
+// Intro
+.intro {
+  margin: auto;
+  padding: 1em 1em 3em; 
+  p {
+    font-size: 1.2em; 
+  } 
+  @include mediaQ('lg') {
+    width: 45%;
+  }
+}
+
+
+
