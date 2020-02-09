@@ -1,0 +1,127 @@
+// ======================================
+//  Variables
+// ======================================
+// Colors
+$white: #fff;
+$color-primary: #2DA9FF; // Bright Blue
+$color-secondary: #0A75BE; //Dark Blue
+
+// Fonts
+$font-stack-primary:'Inconsolata', monospace;
+
+
+// ======================================
+//  Base Styles
+// ======================================
+
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    font-size: 1rem;
+    font-family: $font-stack-primary;
+    margin: 0;
+    padding:0;
+    min-height: 100vh;
+    margin-top: -20px;
+}
+
+// ======================================
+//  Navigation
+// ======================================
+nav{
+    width:100%;
+    background: $color-primary;
+    height: 64px;
+}
+#main-nav{
+    width:50%;
+}
+#main-nav a {
+    color: #f6f7f8;
+    background: $color-primary;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+#main-nav a:hover {
+    background: $color-secondary;
+  }
+#main-nav ul {
+    list-style: none;
+    display: flex;
+    padding:0;
+} 
+#main-nav li {
+   width: 100%;
+    text-align: center;
+    position: relative;
+}
+  .submenu li {
+    display: none;
+}  
+.borderRight{
+    border-right: 1px solid white;
+}
+
+// ======================================
+//  Media Queries
+// ======================================
+
+//MEDIUM
+@media only screen and (min-width: 601px) and (max-width: 900px){
+    #main-nav{
+        width:100vw;
+    }
+    #main-nav li{
+        width:33.33vw;
+        &:hover{ 
+            .submenu{
+                margin-left:-33.33vw;
+                border-top: 1px solid white;
+            }
+            .submenu > li{
+                display:flex;
+                width:100vw; 
+                a{
+                    width:33.33vw;
+                }
+            }
+        }
+    }
+}
+
+//SMALL
+@media(max-width: 600px){
+    #main-nav{
+          display:block;
+    }
+    #main-nav ul{
+        display:block;
+        width:100vw;
+    }
+    .submenu li{
+        display:block;
+    }
+    .borderRight{
+        border-right:none;
+        border-bottom: 1px solid white;
+    }
+}
+
+//LARGE
+@media(min-width: 901px){
+#main-nav li:hover .submenu > li {
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    }
+    .submenu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

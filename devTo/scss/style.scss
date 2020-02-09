@@ -1,0 +1,32 @@
+$theme-colors:(
+    "primary": $primary,
+);
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'sizing';
+
+@for $i from 1 through 12 {
+    .col-sm-#{$i}{
+        @include sizer(small);
+        flex: $i 100px;
+        // float: left;
+        // width:percentage(($i/12))
+    }
+    .col-md-#{$i}{
+        @include sizer(medium);
+        flex: $i 100px;
+    }
+    .col-lg-#{$i}{
+        @include sizer(large);
+        flex: $i 100px;
+    }
+}
+
+
+$primary: #c122c1;
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+h1{
+    color:$primary;
+}
