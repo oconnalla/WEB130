@@ -78,6 +78,7 @@ nav{
 @media only screen and (min-width: 601px) and (max-width: 900px){
     #main-nav{
         width:100vw;
+
     }
     #main-nav li{
         width:33.33vw;
@@ -91,7 +92,7 @@ nav{
                 display:flex;
                 width:100vw; 
                 a{
-                    width:33.33vw;
+                    width:25vw;
                 }
             }
         }

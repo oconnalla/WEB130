@@ -77,7 +77,7 @@ nav {
     width: 100vw;
   }
   #main-nav li:hover .submenu > li a {
-    width: 33.33vw;
+    width: 25vw;
   }
 }
 #mainMenu {
