@@ -3,7 +3,7 @@
 }
 
 body {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-family: "Inconsolata", monospace;
   margin: 0;
   padding: 0;
@@ -55,6 +55,10 @@ nav {
   border-right: 1px solid white;
 }
 
+.icon {
+  display: none;
+}
+
 @media only screen and (min-width: 601px) and (max-width: 900px) {
   #main-nav {
     width: 100vw;
@@ -64,6 +68,7 @@ nav {
     width: 33.33vw;
   }
   #main-nav li:hover .submenu {
+    display: flex;
     margin-left: -33.33vw;
     border-top: 1px solid white;
   }
@@ -75,9 +80,43 @@ nav {
     width: 33.33vw;
   }
 }
+#mainMenu {
+  display: none;
+}
+
 @media (max-width: 600px) {
   #main-nav {
     display: block;
+    position: relative;
+  }
+
+  #mainNav {
+    display: block;
+    position: relative;
+  }
+
+  .fa-bars, .fa-times {
+    position: absolute;
+    left: 0;
+    margin: 0px 5px;
+  }
+
+  #menuBar {
+    padding-top: 5%;
+  }
+
+  #mainMenu {
+    margin-top: 0;
+  }
+  #mainMenu #menu {
+    margin-right: 100px;
+  }
+
+  #main-nav .icon {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 0;
   }
 
   #main-nav ul {
@@ -92,6 +131,10 @@ nav {
   .borderRight {
     border-right: none;
     border-bottom: 1px solid white;
+  }
+
+  .topNav {
+    display: none;
   }
 }
 @media (min-width: 901px) {

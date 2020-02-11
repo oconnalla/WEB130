@@ -19,7 +19,7 @@ $font-stack-primary:'Inconsolata', monospace;
 }
   
 body {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-family: $font-stack-primary;
     margin: 0;
     padding:0;
@@ -67,6 +67,9 @@ nav{
     border-right: 1px solid white;
 }
 
+    .icon {
+    display: none;
+}
 // ======================================
 //  Media Queries
 // ======================================
@@ -80,6 +83,7 @@ nav{
         width:33.33vw;
         &:hover{ 
             .submenu{
+                display:flex;
                 margin-left:-33.33vw;
                 border-top: 1px solid white;
             }
@@ -93,12 +97,44 @@ nav{
         }
     }
 }
+#mainMenu{
+    display:none;
+}
+
 
 //SMALL
 @media(max-width: 600px){
     #main-nav{
           display:block;
+          position: relative;
     }
+    #mainNav{
+        display:block;
+        position: relative;
+  }
+    .fa-bars, .fa-times{
+        position:absolute;
+       left:0;
+        margin:0px 5px;
+    }
+    #menuBar{
+        padding-top:5%;
+    }
+    #mainMenu{
+        // display:none;
+        margin-top:0;
+    #menu{
+        margin-right:100px;
+    }
+    }
+    #main-nav .icon {
+        display: block;
+        width:100vw;
+        text-align: center;
+        margin-bottom:0;
+        
+    }
+
     #main-nav ul{
         display:block;
         width:100vw;
@@ -109,6 +145,9 @@ nav{
     .borderRight{
         border-right:none;
         border-bottom: 1px solid white;
+    }
+    .topNav{
+        display:none;
     }
 }
 
