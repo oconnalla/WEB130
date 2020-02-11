@@ -59,7 +59,7 @@ nav {
   display: none;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 900px) {
+@media only screen and (min-width: 601px) and (max-width: 990.99px) {
   #main-nav {
     width: 100vw;
   }
@@ -84,7 +84,7 @@ nav {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600.99px) {
   #main-nav {
     display: block;
     position: relative;
@@ -137,7 +137,7 @@ nav {
     display: none;
   }
 }
-@media (min-width: 901px) {
+@media (min-width: 991px) {
   #main-nav li:hover .submenu > li {
     display: flex;
     flex-direction: column;
