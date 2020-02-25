@@ -7,7 +7,7 @@ const babel = require('rollup-plugin-babel')
 const browserSync = require('browser-sync').create()
 
 gulp.task('sass', () => {
-    return gulp.src('./scss/style.scss')
+    return gulp.src('./scss/main.scss')
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(sourcemaps.write())
@@ -33,7 +33,7 @@ gulp.task('lint', () => {
 })
 
 gulp.task('rollup', () => {
-    return gulp.src('./js/index.js')
+    return gulp.src('./js/main.js')
     .pipe(rollup({
         plugins: [
             babel({

@@ -1,5 +1,5 @@
-let greeter = () =>{
-    alert('Hi!');
+let greeter = () => {
+    alert('Hi! la la!');
 }
 
 export { greeter }

@@ -1,12 +1,7 @@
-//require('bootstrap');
 /*global $ */
-import { greeter } from './greeter'
-
+import { greeter } from './greeter';
 setTimeout(greeter, 500);
 
-// exports.printMsg = function() {
-//     console.log("This is a message from the demo package");
-//   }
 var $titleField = $('input[name="title"]');
 // $('.save-btn').on('click', function(event){
 //   event.preventDefault();
