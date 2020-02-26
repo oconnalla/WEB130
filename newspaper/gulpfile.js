@@ -63,15 +63,6 @@ gulp.task('default', async function(){
     })
 }, 'watch-scss', 'watch-js')
 
-// gulp.task('new-default', gulp.parallel(() => {
-//     browserSync.init({
-//     notify:false,
-//     proxy:'localhost:8080',
-//     port:8080,
-//     open: false
-//     });
-// },'watch-scss', 'watch-js'))
-
 gulp.task('new-default', gulp.parallel(() =>{
     browserSync.init({
         server: './',

@@ -11,54 +11,46 @@
         <!-- GRAPHCMS QUERY
         curl 'https://api-uswest.graphcms.com/v1/ck71ll9vz3mye01cy9khd4ks6/master' -H 'content-type: application/json' --data-binary '{"query": "query {articles {id,title, published}}"}'
         {"data":{"articles":[{"id":"ck71mg3guht7e0971f0n0sr4m","title":"Best Fluffy Scarves","published":"2020-02-18T00:00:00.000Z"},{"id":"ck71mikhzhtef0971fjk345tn","title":"Seattle Central Saves The Day","published":"2020-02-25T00:00:00.000Z"}]}}⏎                                                    owner@Owners-MBP ~/D/S/W/W/newspaper>  -->
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
-            INITECH
+        <a class="navbar-brand" href="/">
+            Newspaper LOGO
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigration">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarDropdown">
-            <ul class="navbar-nav">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">
-                        Home
-                    </a>
+                    <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarProductsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        Products
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Category
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarProductsDropdown">
-                        <a class="dropdown-item" href="#">
-                            Hats
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            Gloves
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            Shoes
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            Pumpkins
-                        </a>
+                    <div id="categoryDrop" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Sports</a>
+                        <!-- <a class="dropdown-item" href="#">Local</a>
+                        <a class="dropdown-item" href="#">National</a>
+                        <a class="dropdown-item" href="#">Local</a>
+                        <a class="dropdown-item" href="#">Lifestyle</a> -->
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        Contact
-                    </a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <main class="container">
-                <h2 class = " mt-3 mb-3">
-                   Newspaper
-                </h2>
+    <div class="container">
+        <h1 class = " mt-3 mb-3">
+            Newspaper
+        </h1>
+        <main class = "row">
+            Loading...
+        </main>
+
+
+<!-- /////////DELETE LATER/////////// -->
         <form>
             <div class="form-group">
                 <label for="title">
@@ -100,10 +92,10 @@
                 </button>
             </div>
         </form>
-    </main>
+    </div>
+
 <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script type="text/javascript"  src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
