@@ -50,11 +50,13 @@ gulp.task('rollup', () => {
     .pipe(gulp.dest('./dist'))
 })
 
-gulp.task('watch-js', () => {
+gulp.task('watch-js-init', () => {
     gulp.watch([
         './js/*.js'
     ], gulp.series('lint', 'rollup')).on('change', browserSync.reload)
 })
+
+gulp.task('watch-js', gulp.series(['lint', 'rollup', 'watch-js-init']))
 
 gulp.task('default', async function(){
     browserSync.init({
@@ -63,7 +65,7 @@ gulp.task('default', async function(){
     })
 }, 'watch-scss', 'watch-js')
 
-gulp.task('new-default', gulp.parallel(() =>{
+gulp.task('new-default', gulp.parallel(() => {
     browserSync.init({
         server: './',
         port: 8080
