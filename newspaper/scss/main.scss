@@ -1,1 +1,18 @@
 @import  '../node_modules/bootstrap/scss/bootstrap';
+
+$red: #a00404;
+
+article{
+    margin-bottom: 100px;
+}
+
+h1{
+    font-size:5rem;
+    text-align: center;
+    font-family: serif;
+    padding: 2rem 0;
+    color: $red;
+}
+a{
+    color: $red;
+}
