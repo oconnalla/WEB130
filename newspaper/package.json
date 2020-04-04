@@ -11,7 +11,7 @@
   "dependencies": {
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
-    "acorn": "^7.1.0",
+    "acorn": "^7.1.1",
     "axios": "^0.19.2",
     "basic-auth": "^2.0.1",
     "bootstrap": "^4.4.1",
